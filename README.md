@@ -2,7 +2,7 @@
 
 
 ## Overview 
-Here's the project link : 
+Here's the project [link] (https://climedu.github.io/FA205-Recycle-2040/)
 
 ### Progress 1 - Searching on SDG problem
 Found this news that related to my background
