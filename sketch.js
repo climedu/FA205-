@@ -106,7 +106,7 @@ function draw() {
   }
 
 
-if (currentImageIndex === 3 || currentImageIndex === 4) {
+if ((currentImageIndex === 3 || currentImageIndex === 4)&& isMouseInsideReturn(buttonXr, buttonYr, buttonWr, buttonHr)) {
   drawInvisibleButtonreturn(buttonXr, buttonYr, buttonWr, buttonHr);
   image(returnbutton,0,0);
 }
