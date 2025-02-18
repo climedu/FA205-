@@ -10,6 +10,7 @@ let maxWalkers = 5;
 let walkers2 = []
 let walkerCount2 = 0; // Counter for how many walkers have appeared
 let maxWalkers2 = 5;
+let walkerfish = [];
 
 let timeoutID = null;
 
@@ -27,11 +28,17 @@ function preload() {
   arrowr= loadImage('pics/arrowr.png'); //Arrow right image
   returnbutton = loadImage('pics/return.png'); // return button image
   trash = loadImage('pics/trash.png'); //trash image
+  fish = loadImage('pics/fish.png'); // fish image
 }
 
 function setup() {
   createCanvas(800, 800);
   startWalkerTimer();
+  for (let i = 0; i < 8; i++) {
+    let x = random(0,100);
+    let y = random(600,800);
+    walkerfish[i] = new WalkerFish(x, y); // Use 'walkers' instead of 'walker'
+  }
 }
 
 function startWalkerTimer() {
@@ -82,7 +89,8 @@ function draw() {
   } else if ( currentImageIndex === 2) {
     image(road,0,0); // display road image
 
-  
+
+
     for (let i = 0; i < walkers2.length; i++) {
       walkers2[i].step();
       walkers2[i].show();
@@ -90,6 +98,10 @@ function draw() {
 
     image(overlay, 0, 0); // Display overlay on top of the main image
     image(pollutionover, 0,0); // Display pollution overlay arrow
+    for (let i = 0; i < walkerfish.length; i++) {
+      walkerfish[i].step();
+      walkerfish[i].show();
+    }
     drawInvisibleButtonright(buttonX, buttonY, buttonW, buttonH);
   }
 
@@ -157,6 +169,27 @@ class Walker2 {
 
   show() {
     image(trash, this.x, this.y, 800, 800); // Adjust the size if needed
+  }
+}
+
+//for fish moving
+class WalkerFish {
+  constructor(x, y) { // Use x, y (not x2, y2) for consistency
+    this.x = x;
+    this.y = y;
+  }
+
+  step() {
+    this.x += random(-1, 1);
+    this.y += random(-1, 1);
+
+    // Make sure it stays within bounds
+    this.x = constrain(this.x, 0, width - 30);
+    this.y = constrain(this.y, 0, height - 30);
+  }
+
+  show() {
+    image(fish, this.x, this.y, 80, 80); // Adjust the size if needed
   }
 }
 
