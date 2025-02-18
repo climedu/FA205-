@@ -4,11 +4,28 @@
 ## Overview 
 Here's the project [link] (https://climedu.github.io/FA205-Recycle-2040/)
 
+This is an interactive project that allows users to make their own decisions based on the situation in Jakarta, Indonesia, related to clean water sanitation. 
+
 ### Progress 1 - Searching on SDG problem
-Found this news that related to my background
+Recycle 2040 is an artwork that represents the current world’s problems. According to UNSDG number 6, "Clean Water & Sanitation” ensures access to water and sanitation for all. Access to safe water, sanitation and hygiene is the most basic human need for health and well-being (United Nations, 2018). As I am an Indonesian, and I want to make something related to my background, I searched about the issues in Indonesia, and one of them is clean water sanitation in Jakarta, the capital city of Indonesia, which is bad and undrinkable (Teoman, 2024). 
+
+Tons of waste from factories along the shores of the rivers that flow through the metropolis are dumped directly into the waters, in addition to raw domestic waste from millions of homes that end up in the city's waterways (Sonda, International, n.d.). Dumping waste into rivers can cause the water to become turbid and odorous. To resolve that, Jakarta needs to learn how to properly manage waste, such as separating recyclable from non-recyclable waste. Regular river cleaning is essential to restore cleanliness after being polluted by waste (Smart City Jakarta, 2024).
+
+Knowing there’s a water pollution issue in my own country motivated me to create this project, wanting to let others know more about situations happening in Indonesia.  This project is based on factory pollution, water quality that is shown by the river, and recycling. Starting by making concepts, creating an image collection, making the art with the collage art style, and finally coding it while asking for feedback. There was some layering of images, with the if-else conditionals to create buttons that create interactivity with the users and allow users to get their own outcomes depending on their choice. 
+
+https://www.un.org/sustainabledevelopment/water-and-sanitation/#:~:text=Goal%206%3A%20Ensure%20access%20to%20water%20and%20sanitation%20for%20all&text=Access%20to%20safe%20water%2C%20sanitation,in%202030%20unless%20progress%20quadruples.
+
+https://www.eco-business.com/opinion/jakarta-is-a-thirsty-metropolis-without-drinkable-water/
+
+https://smartcity.jakarta.go.id/en/blog/tips-sederhana-jaga-sungai-di-jakarta/
 
 ### Progress 2 - Making the images and context based on the problem research
-Started by gathering these images from these sources : 
+Started by imaging the outcomes would be, which is aiming for the collage art style, and looking for inspirations.
+
+<img width="400" alt="Screenshot 2025-02-18 at 6 01 58 PM" src="https://github.com/user-attachments/assets/b31b3ee0-bd26-42eb-8f2e-c5ba04d63d3e" />
+
+
+Gathering these images from these sources : 
 
 <img width="800" alt="Screenshot 2025-02-18 at 3 56 42 PM" src="https://github.com/user-attachments/assets/2d4815bb-8468-45ec-ba20-8e665b23c0c6" />
 
@@ -699,3 +716,7 @@ function isMouseInsideReturn(xr, yr, wr, hr) {
 }
 ```
 <img width="800" alt="Screenshot 2025-02-18 at 3 52 36 PM" src="https://github.com/user-attachments/assets/3fa40d28-33de-4f93-a546-524e354f93f1" />
+
+## Commentary
+- Overall, this projects was more about the research of the concerning issues, and ways to communicating it as an artwork
+- It's my first time using a lot of layers and help me practice to decide what comes first, and practicing more in if else conditionals to move from scene to scene
