@@ -827,7 +827,7 @@ function draw() {
   }
 
 
-if (currentImageIndex === 3 || currentImageIndex === 4) {
+if ((currentImageIndex === 3 || currentImageIndex === 4)&& isMouseInsideReturn(buttonXr, buttonYr, buttonWr, buttonHr)) {
   drawInvisibleButtonreturn(buttonXr, buttonYr, buttonWr, buttonHr);
   image(returnbutton,0,0);
 }
@@ -987,6 +987,7 @@ function isMouseInsideLeft(xl, yl, wl, hl) {
 function isMouseInsideReturn(xr, yr, wr, hr) {
   return mouseX > xr && mouseX < xr + wr && mouseY > yr && mouseY < yr + hr;
 }
+
 ```
 <img width="800" alt="Screenshot 2025-02-18 at 6 57 57 PM" src="https://github.com/user-attachments/assets/bc68b654-8f5b-4dcb-a2f4-556bba7ffd68" />
 
